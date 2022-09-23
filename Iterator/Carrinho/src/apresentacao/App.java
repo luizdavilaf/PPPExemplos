@@ -7,5 +7,7 @@ public class App {
 
         
         carrinho.MostraCarrinho(carrinho);
+
+       
     }
 }

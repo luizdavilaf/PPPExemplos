@@ -32,10 +32,13 @@ public class Carrinho implements Iterator {
     }
 
     public void MostraCarrinho(Iterator iterator) {
+        Double soma = 0.0;
         while (iterator.hasNext()) {
             Produto produto = (Produto) iterator.next();
             System.out.println(produto.toString());
+            soma = soma + produto.getValue();
         }
+        System.out.println("\t\tTotal: R$ "+soma);
 
     }
 }
